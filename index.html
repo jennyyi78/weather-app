@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weather App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="header"><h1 class="header-text">Weather App</h1></div>
+            <div class="search-bar">
+                <form>
+                    <input type="text" class="location-input" name="location-input" placeholder="City or City,State Code">
+                    <button class="submit-button">Go</button>
+                </form>
+            </div>
+            <div class="weather-panel">
+                <div class="location-container">
+                    <p class="title-text">London</p>
+                    <p class="sub-text">GB</p>
+                </div>
+                <div class="status-container">
+                    <p class="title-text">Rain</p>
+                    <p class="sub-text">light rain</p>
+                </div>
+                <div class="temp-container">
+                    <p class="temp-text">53.14°F</p>
+                </div>
+                <div class="misc-container">
+                    <p class="sub-text">Humidity: 70%</p>
+                    <p class="sub-text">Wind: 7 m/s</p>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
