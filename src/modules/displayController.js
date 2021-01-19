@@ -18,7 +18,6 @@ const displayContent = () => {
         displayErrorMessage();
       } else {
         const weatherObject = processWeather(weatherData);
-        console.log(weatherObject);
 
         const locationContainer = createElement('div', '', 'location-container');
         const cityText = createElement('p', weatherObject.city, 'title-text');
@@ -62,8 +61,10 @@ const displayContent = () => {
     const locationInput = document.querySelector('.location-input');
     submitButton.addEventListener('click', (event) => {
       event.preventDefault();
+      if (weatherPanel.classList.contains('hide-panel')) {
+        weatherPanel.classList.toggle('hide-panel');
+      }
       clearWeather();
-      console.log(locationInput.value);
       displayWeather(locationInput.value);
     });
   };
