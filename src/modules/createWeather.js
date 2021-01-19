@@ -1,5 +1,5 @@
 const createWeather = function Weather(city, country, status, description, temp, humidity, wind) {
-  const kelvinToFahrenheit = function (tempKelvin) {
+  const kelvinToFahrenheit = function convert(tempKelvin) {
     const tempFahrenheit = (tempKelvin - 273.15) * (9 / 5) + 32;
     return tempFahrenheit.toFixed(2);
   };
