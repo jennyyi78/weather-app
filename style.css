@@ -73,6 +73,10 @@ body {
     border: solid;
 }
 
+.hide-panel {
+    display: none;
+}
+
 .title-text {
     font-size: 45px;
     line-height: 0px;
